@@ -38,6 +38,8 @@ In retail banking, prospective borrowers often struggle to understand their borr
 
 ## 📐 System Architecture
 
+![System Architecture](assets/architecture_diagram.png)
+
 ```mermaid
 graph TD
     User[User / Client browser] -->|Inputs Data| UI[Streamlit UI app.py]
