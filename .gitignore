@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.env
+
+loan_history.db
+FinAssist_AI_Report.pdf
+
+.streamlit/
+
+.DS_Store
