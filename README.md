@@ -4,6 +4,11 @@ An AI-powered financial advisory platform that automates loan eligibility analys
 
 ---
 
+## 🌐 Live Demo
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://finassist-ai.streamlit.app)
+
+
 ## 📌 Academic & Professional Assets
 
 ### Project Objective (Academic Submissions)
@@ -120,17 +125,20 @@ streamlit run app.py
 
 ## 📸 Screenshots
 
-*(Placeholder sections for application visuals)*
+### Home Page & User Input
+![Home Page](assets/home-page.png)
 
-#### 1. Input Panel & Eligibility Assessment
-> *[Placeholder: Add input_panel_screenshot.png here]*
+### Loan Assessment Dashboard
+![Loan Dashboard](assets/loan-dashboard.png)
 
-#### 2. Plotly Analytics Dashboard & Comparisons
-> *[Placeholder: Add dashboard_screenshot.png here]*
+### Financial Analytics & Recommendations
+![Financial Summary](assets/financial-summary.png)
 
-#### 3. AI Financial Advisor & Chatbot
-> *[Placeholder: Add ai_chat_screenshot.png here]*
+### AI Financial Advisor
+![AI Advisor](assets/ai-advisor.png)
 
+### System Architecture
+![Architecture Diagram](assets/architecture-diagram.png)
 ---
 
 ## 🔮 Future Enhancements
