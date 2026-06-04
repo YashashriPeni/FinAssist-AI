@@ -131,10 +131,10 @@ streamlit run app.py
 ![Home Page](assets/home-page.png)
 
 ### Loan Assessment Dashboard
-![Loan Dashboard](assets/loan-dashboard.png)
+![Loan Dashboard](assets/loan-comparison.png)
 
 ### Financial Analytics & Recommendations
-![Financial Summary](assets/financial-summary.png)
+![Financial Summary](assets/analytics-dashboard.png)
 
 ### AI Financial Advisor
 ![AI Advisor](assets/ai-advisor.png)
