@@ -1,5 +1,7 @@
 # FinAssist AI – Intelligent Loan Recommendation Agent
 
+![Architecture Diagram](assets/architecture-diagram.png)
+
 An AI-powered financial advisory platform that automates loan eligibility analysis, performs EMI calculations, offers intelligent product recommendations, provides conversational financial advice, and generates professional PDF summaries.
 
 ---
@@ -43,7 +45,7 @@ In retail banking, prospective borrowers often struggle to understand their borr
 
 ## 📐 System Architecture
 
-![System Architecture](assets/architecture_diagram.png)
+![System Architecture](assets/architecture-diagram.png)
 
 ```mermaid
 graph TD
@@ -137,9 +139,6 @@ streamlit run app.py
 ### AI Financial Advisor
 ![AI Advisor](assets/ai-advisor.png)
 
-### System Architecture
-![Architecture Diagram](assets/architecture-diagram.png)
----
 
 ## 🔮 Future Enhancements
 * **Multi-Bank APIs**: Direct integration with open banking APIs to pull live interest rates.
