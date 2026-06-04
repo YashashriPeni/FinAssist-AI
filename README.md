@@ -1,6 +1,6 @@
 # FinAssist AI – Intelligent Loan Recommendation Agent
 
-![Architecture Diagram](assets/architecture-diagram.png)
+![Architecture Diagram](assets/architecture_diagram.png)
 
 An AI-powered financial advisory platform that automates loan eligibility analysis, performs EMI calculations, offers intelligent product recommendations, provides conversational financial advice, and generates professional PDF summaries.
 
