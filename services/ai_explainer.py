@@ -52,7 +52,7 @@ Keep the response under 150 words.
 
 
 def financial_chat(
-        messages,
+        user_question,
         name,
         income,
         credit_score,
@@ -79,18 +79,18 @@ Answer based on this profile.
 Keep responses concise and practical.
 """
 
-    chat_messages = [
-        {
-            "role": "system",
-            "content": system_prompt
-        }
-    ]
-
-    chat_messages.extend(messages)
-
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
-        messages=chat_messages
+        messages=[
+            {
+                "role": "system",
+                "content": system_prompt
+            },
+            {
+                "role": "user",
+                "content": user_question
+            }
+        ]
     )
 
     return response.choices[0].message.content
