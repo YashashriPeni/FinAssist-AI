@@ -101,7 +101,13 @@ purpose = st.selectbox(
     ]
 )
 
+if "analysis_done" not in st.session_state:
+    st.session_state.analysis_done = False
+
 if st.button("Analyze Loan Eligibility"):
+    st.session_state.analysis_done = True
+
+if st.session_state.analysis_done:
 
     eligible, message = check_eligibility(
         age,
@@ -396,7 +402,7 @@ if st.button("Analyze Loan Eligibility"):
                 st.write(user_question)
 
             answer = financial_chat(
-                st.session_state.messages,
+                user_question,
                 name,
                 income,
                 credit_score,
