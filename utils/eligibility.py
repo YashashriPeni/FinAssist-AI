@@ -10,3 +10,14 @@ def check_eligibility(age, income, credit_score):
         return False, "Credit score is too low."
 
     return True, "Eligible for loan consideration."
+
+
+def calculate_approval_probability(credit_score, income):
+    return min(
+        95,
+        int(
+            (credit_score * 0.6 / 9)
+            +
+            min(income / 2000, 40)
+        )
+    )

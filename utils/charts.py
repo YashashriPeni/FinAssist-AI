@@ -53,3 +53,30 @@ def approval_gauge(probability):
     )
 
     return fig
+
+
+def financial_health_gauge(score):
+
+    fig = go.Figure(
+        go.Indicator(
+            mode="gauge+number",
+            value=score,
+            title={"text": "Financial Health Index"},
+            gauge={
+                "axis": {"range": [0, 100]},
+                "bar": {"thickness": 0.4},
+                "steps": [
+                    {"range": [0, 50], "color": "red"},
+                    {"range": [50, 75], "color": "orange"},
+                    {"range": [75, 100], "color": "green"}
+                ]
+            }
+        )
+    )
+
+    fig.update_layout(
+        height=300,
+        margin=dict(l=20, r=20, t=50, b=20)
+    )
+
+    return fig

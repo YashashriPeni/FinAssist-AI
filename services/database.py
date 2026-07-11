@@ -89,3 +89,41 @@ def get_history():
     conn.close()
 
     return data
+
+
+def get_history_with_id():
+    conn = sqlite3.connect("loan_history.db")
+    cursor = conn.cursor()
+    cursor.execute(
+        """
+        SELECT
+            id,
+            applicant,
+            income,
+            credit_score,
+            loan_amount,
+            recommended_product,
+            emi
+        FROM loan_history
+        ORDER BY id DESC
+        """
+    )
+    data = cursor.fetchall()
+    conn.close()
+    return data
+
+
+def delete_history_item(item_id):
+    conn = sqlite3.connect("loan_history.db")
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM loan_history WHERE id = ?", (item_id,))
+    conn.commit()
+    conn.close()
+
+
+def clear_all_history():
+    conn = sqlite3.connect("loan_history.db")
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM loan_history;")
+    conn.commit()
+    conn.close()

@@ -8,6 +8,8 @@ __pycache__/
 
 loan_history.db
 FinAssist_AI_Report.pdf
+Financial_Health_Report.pdf
+*.mp4
 
 .streamlit/
 
