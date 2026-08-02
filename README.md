@@ -10,6 +10,8 @@ An AI-powered financial advisory platform that automates loan eligibility analys
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://finassist-ai.streamlit.app)
 
+👉 **Live URL**: [https://finassist-ai.streamlit.app](https://finassist-ai.streamlit.app)
+
 
 ## 📌 Academic & Professional Assets
 
